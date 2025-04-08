@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banti Patel | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #777;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+    }
+
+    .projects, .skills, .certifications, .achievements {
+      margin-bottom: 2rem;
+    }
+
+    .project, .cert, .achievement {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    img.profile {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 1rem auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="profile.png" alt="Banti Patel" class="profile">
+    <h1>Banti Patel</h1>
+    <p>Machine Learning & AI Enthusiast | CSE Student</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a CSE student with a strong interest in machine learning, deep learning, and artificial intelligence. I specialize in building intelligent systems that leverage data to provide real-time insights and predictive capabilities. My projects explore computer vision, predictive analytics, and web-based AI applications.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>CHARUSAT</strong> – B.Tech CSE – CGPA: 9.30 (2023-2027)</p>
+    <p><strong>Sanskarkunj Gyanpith</strong> – HSC: 81.28%, SSC: 89.17%</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <strong>Fruit Quality Detection</strong><br>
+        A system developed using deep learning and computer vision to detect fruit quality. Utilized TensorFlow and Streamlit for an interactive web app that classifies fruits into fresh or rotten categories.
+      </div>
+      <div class="project">
+        <strong>Dynamic WareGrid</strong><br>
+        Warehouse automation solution using AI for dynamic inventory management. Integrated Twilio API for SMS alerts on low stock levels and included predictive analytics using machine learning.
+      </div>
+      <div class="project">
+        <strong>PlaceAI</strong><br>
+        Placement prediction web application using Flask and machine learning. Takes inputs like IQ and CGPA to predict placement status and visualize the result in real-time.
+      </div>
+      <div class="project">
+        <strong>Inventory Management System</strong><br>
+        Built a desktop-based inventory manager using C++ and .NET framework. Supports CRUD operations, generates reports, and includes a simple authentication module.
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, C++, Java, HTML, CSS, JS</p>
+    <p><strong>Frameworks/Tools:</strong> TensorFlow, Flask, Power BI, Postgres</p>
+    <p><strong>Soft Skills:</strong> Adaptive, Collaborative, Organized</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications">
+      <div class="cert">ML Specialization by Stanford</div>
+      <div class="cert">Jetson Nano by NVIDIA</div>
+      <div class="cert">Crash Course on Python by Google</div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements">
+      <div class="achievement">210+ LeetCode Problems Solved</div>
+      <div class="achievement">HackerRank – C++ (5⭐), Java (4⭐)</div>
+      <div class="achievement">PyQuest Hackathon – 4th Place</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: patelbanti993@gmail.com</p>
+    <p><a href="https://www.linkedin.com/in/banti-patel-b091b0288/" target="_blank">LinkedIn</a> | <a href="https://github.com/Bantipatel20" target="_blank">GitHub</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Banti Patel. All rights reserved.
+  </footer>
+</body>
+
+</html>
