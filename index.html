@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Banti Patel | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -51,12 +50,19 @@
       padding-bottom: 0.5rem;
     }
 
-    .projects, .skills, .certifications, .achievements {
-      margin-bottom: 2rem;
-    }
-
     .project, .cert, .achievement {
       margin-bottom: 1rem;
+    }
+
+    .project a, .achievement a {
+      display: inline-block;
+      margin-top: 0.3rem;
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .project a:hover, .achievement a:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -84,19 +90,59 @@
       margin: 1rem auto;
       display: block;
     }
+
+    ul {
+      padding-left: 1.5rem;
+      list-style-type: disc;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .about-icons {
+      margin-top: 1rem;
+    }
+
+    .about-icons a {
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 1.1rem;
+      color: #333;
+      background: #f0f0f0;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .about-icons a:hover {
+      background-color: #007acc;
+      color: white;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="profile.png" alt="Banti Patel" class="profile">
+    <img src="profile.png" alt="Banti Patel" class="profile" />
     <h1>Banti Patel</h1>
     <p>Machine Learning & AI Enthusiast | CSE Student</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m a CSE student with a strong interest in machine learning, deep learning, and artificial intelligence. I specialize in building intelligent systems that leverage data to provide real-time insights and predictive capabilities. My projects explore computer vision, predictive analytics, and web-based AI applications.</p>
+    <p>
+      👋 Hi! I'm <strong>Banti Patel</strong>, a passionate Computer Science student with a knack for building intelligent systems. 
+      My journey revolves around crafting Machine Learning, Deep Learning, and real-time AI-driven applications.
+      I thrive on learning new tech and solving real-world challenges using data. <br><br>
+      I enjoy developing models, designing dashboards, and building intuitive user interfaces.
+    </p>
+    
+    <div class="about-icons">
+      🔗 <a href="https://github.com/Bantipatel20" target="_blank">GitHub</a>
+      💼 <a href="https://www.linkedin.com/in/banti-patel-b091b0288/" target="_blank">LinkedIn</a>
+      📄 <a href="resume.pdf" target="_blank">Resume</a>
+    </div>
   </section>
 
   <section id="education">
@@ -107,60 +153,86 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <strong>Fruit Quality Detection</strong><br>
-        A system developed using deep learning and computer vision to detect fruit quality. Utilized TensorFlow and Streamlit for an interactive web app that classifies fruits into fresh or rotten categories.
-      </div>
-      <div class="project">
-        <strong>Dynamic WareGrid</strong><br>
-        Warehouse automation solution using AI for dynamic inventory management. Integrated Twilio API for SMS alerts on low stock levels and included predictive analytics using machine learning.
-      </div>
-      <div class="project">
-        <strong>PlaceAI</strong><br>
-        Placement prediction web application using Flask and machine learning. Takes inputs like IQ and CGPA to predict placement status and visualize the result in real-time.
-      </div>
-      <div class="project">
-        <strong>Inventory Management System</strong><br>
-        Built a desktop-based inventory manager using C++ and .NET framework. Supports CRUD operations, generates reports, and includes a simple authentication module.
-      </div>
+    <div class="project">
+      <strong>Fruit Quality Detection</strong><br>
+      <em>Python | TensorFlow | Streamlit | OpenCV</em><br>
+      Developed a Streamlit-based AI system using Deep Learning (CNN) to predict fruit quality with 91% accuracy. Enabled real-time predictions via image uploads or webcam input.
+      <br><a href="https://github.com/soni-shashan/FRUIT-QUALITY-PREDICTION" target="_blank">GitHub Link</a>
+    </div>
+    <div class="project">
+      <strong>Dynamic WareGrid – Warehouse Management System</strong><br>
+      <em>Python | Streamlit | Plotly | Twilio API | HuggingFace | OpenCV</em><br>
+      An AI-powered warehouse system with barcode scanning, transaction logging, chatbot assistant, data visualizations, and WhatsApp alerts for low stock levels.
+      <br><a href="https://github.com/soni-shashan/WareGrid" target="_blank">GitHub Link</a>
+    </div>
+    <div class="project">
+      <strong>PlaceAI – Placement Prediction</strong><br>
+      <em>Python | Flask | Logistic Regression | NumPy | Pandas</em><br>
+      ML-based web app that predicts student placement status using CGPA and IQ. Deployed via Railway with real-time prediction results and model visualization.
+      <br><a href="https://github.com/Bantipatel20/PlaceAI" target="_blank">GitHub Link</a>
+    </div>
+    <div class="project">
+      <strong>Inventory Management System</strong><br>
+      <em>C++ | .NET Framework</em><br>
+      Desktop application to manage product stock efficiently. Features CRUD operations, authentication, and reporting modules.
+      <br><a href="https://github.com/soni-shashan/INVENTORY_MANAGEMENT_SYSTEM" target="_blank">GitHub Link</a>
     </div>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <p><strong>Languages:</strong> Python, C++, Java, HTML, CSS, JS</p>
-    <p><strong>Frameworks/Tools:</strong> TensorFlow, Flask, Power BI, Postgres</p>
-    <p><strong>Soft Skills:</strong> Adaptive, Collaborative, Organized</p>
+    <ul>
+      <li><strong>Key Strengths:</strong> Machine Learning (ML), Deep Learning (DL), User Interface Designing (UI)</li>
+      <li><strong>Programming Languages:</strong> Python, C, Java, JavaScript</li>
+      <li><strong>Frameworks:</strong> TensorFlow, Keras, Pandas, NumPy, Matplotlib, Seaborn, scikit-learn, Flask</li>
+      <li><strong>Tools:</strong> Power BI, Jetson Nano, PostgreSQL, MySQL</li>
+      <li><strong>Soft Skills:</strong> Adaptive, Collaborative, Organized</li>
+    </ul>
   </section>
 
   <section id="certifications">
     <h2>Certifications</h2>
-    <div class="certifications">
-      <div class="cert">ML Specialization by Stanford</div>
-      <div class="cert">Jetson Nano by NVIDIA</div>
-      <div class="cert">Crash Course on Python by Google</div>
-    </div>
+    <ul>
+      <li><strong>Machine Learning Specialization</strong> (Coursera – Stanford & DeepLearning.AI)
+        <ul>
+          <li>Supervised Machine Learning: Regression and Classification</li>
+          <li>Advanced Learning Algorithms</li>
+          <li>Unsupervised Learning, Recommenders, Reinforcement Learning</li>
+        </ul>
+      </li>
+      <li><strong>Getting Started with AI on Jetson Nano</strong> – NVIDIA</li>
+      <li><strong>Crash Course on Python</strong> – Google (Coursera)</li>
+      <li><strong>Kaggle Courses:</strong> Python, Machine Learning</li>
+      <li><strong>HackerRank Certificates:</strong> Python, Java</li>
+    </ul>
   </section>
 
   <section id="achievements">
     <h2>Achievements</h2>
-    <div class="achievements">
-      <div class="achievement">210+ LeetCode Problems Solved</div>
-      <div class="achievement">HackerRank – C++ (5⭐), Java (4⭐)</div>
-      <div class="achievement">PyQuest Hackathon – 4th Place</div>
-    </div>
+    <ul>
+      <li>210+ LeetCode Problems Solved — <a href="https://leetcode.com/PATEL_BANTI/" target="_blank">LeetCode Profile</a></li>
+      <li>HackerRank: 
+        <a href="https://www.hackerrank.com/profile/23cs_058" target="_blank">C++ (5⭐), Java (4⭐), Python (2⭐), C (4⭐)</a>
+      </li>
+      <li>PyQuest Hackathon 2025 – Fourth Rank</li>
+      <li>Ideathon 2025 – Third Rank</li>
+      <li>Participated in University-Level DoesHack'24 AI Hackathon – Meditab</li>
+      <li>State-Level Techathon 2025 – Adani Institute (organized by ThinkBiz)</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: patelbanti993@gmail.com</p>
-    <p><a href="https://www.linkedin.com/in/banti-patel-b091b0288/" target="_blank">LinkedIn</a> | <a href="https://github.com/Bantipatel20" target="_blank">GitHub</a></p>
+    <p>Email: <a href="mailto:patelbanti993@gmail.com">patelbanti993@gmail.com</a></p>
+    <p>📍 Surat, Gujarat, India</p>
+    <p>
+      <a href="https://www.linkedin.com/in/banti-patel-b091b0288/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Bantipatel20" target="_blank">GitHub</a>
+    </p>
   </section>
 
   <footer>
     &copy; 2025 Banti Patel. All rights reserved.
   </footer>
 </body>
-
 </html>
